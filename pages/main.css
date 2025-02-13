@@ -1,0 +1,226 @@
+/* CSS-Datei main.css */
+
+/*declaration for old browsers no html5*/
+header, nav, section, footer, main {
+    display: block;
+}
+
+html {
+    font-family: Helvetica, 'Myriad Pro', 'Myriad Pro Bold', Arial, Sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 9pt;
+}
+*, ::before, ::after { 
+    box-sizing: inherit;}
+
+body {
+    background-color: gainsboro;
+}
+
+header {
+    background-color: #666;
+    max-width: 80em;
+    margin: 0 auto;
+    position: relative;
+}
+
+main {
+    max-width: 80em;
+    margin: 0 auto;
+    position: relative;
+	background-color: white;
+	padding-top: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+	padding-bottom: 1px;
+}
+
+section {
+    background-color: white;
+    max-width: 80em;
+    position: relative;
+    padding-bottom: 1px;
+	padding-right: 8px;
+}
+
+
+footer {
+    background-color: white;
+    max-width: 80em;
+    margin: 0 auto;
+    position: relative;
+	padding-top: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer section {
+    background-color: #666;
+    color: gainsboro;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 0em;
+}
+
+.footergrd {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+.grd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pagegrd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.haedergrd {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.flex {
+	margin-right: 1em;		
+}
+
+.part {
+	margin-right: 5em;
+}
+
+.clsimg {
+	width: 100%;
+	height: auto;
+}
+
+.tmbimg {
+    width: 25%;
+    height: auto;
+}
+.tmbimg:hover {opacity: 0.7;}
+
+.mainimg {
+	width: 50%;
+	height: auto;
+}
+
+.headline {
+    min-height: 130px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lstnone {
+	list-style-type: none;
+}
+
+.boldred {
+    font-weight: bold;	
+	color: #c03;
+}
+.boldgreen {
+    font-weight: bold;	
+	color: green;
+}
+.mapframe {
+	width: 70%;
+	height: 300px;
+	border: 0;
+}
+
+.hidesec {
+        display:block;
+}
+
+.chkbox {
+    width: auto;
+}
+
+.sitemap {
+    font-size: 12pt;
+}
+
+.textright {
+    text-align: right;
+}
+
+div.table { 
+  display: table; 
+  border-collapse:collapse; 
+}
+div.tr { 
+  display:table-row; 
+}
+div.td { 
+  display:table-cell;
+	padding-left:10px;
+}
+
+a {color: #c03;}
+a:link {color: #c03;}
+a:visited {color: #c03;} 
+a:active {color: #F00;}
+a:hover {color: #666;}
+a.footer {color:gainsboro;}
+a.footer:link {color:gainsboro;}
+a.footer:hover {color: gainsboro;}
+a.footer:visited {color: gainsboro;} 
+a.footer:active {color: gainsboro;}
+
+
+#logo {
+	padding-left: 20px;
+}
+
+#link-sponsor {
+    margin-left: 20px;
+    position: absolute;
+    margin-top:26px;
+}
+
+#img-haedline {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .footergrd {
+        grid-template-columns: 1fr;
+    }
+    .grd {
+    grid-template-columns: 1fr;
+    }
+    .pagegrd {
+    grid-template-columns: 1fr;
+    }
+    .haedergrd {
+    grid-template-columns: 1fr;
+    }
+
+    .mainimg {
+	width: 100%;
+	height: auto;
+    }
+    
+    .tmbimg {
+    width: 50%;
+    }
+        
+	.mapframe {
+	width: 100%;
+    height: auto;
+    }
+    
+    .hidesec {
+        display: none;
+    }
+	
+}
