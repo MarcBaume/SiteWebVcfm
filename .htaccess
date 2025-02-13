@@ -1,0 +1,74 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Options -Indexes
+ErrorDocument 403 https://www.vcfm.ch
+ErrorDocument 404 https://www.vcfm.ch
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^les\-courses\-du\-club\/gp\-crevoisier\/$ "https\:\/\/vcfm\.ch\/pages\/gpcrevoisier\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^les\-activites\/$ "https\:\/\/www\.vcfm\.ch\/pages\/activites\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^non\-classe\/tour\-des\-sommetres\/$ "https\:\/\/www\.vcfm\.ch\/pages\/tourdessommetres\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^les\-courses\-du\-club\/trophee\-du\-doubs\/$ "https\:\/\/www\.vcfm\.ch\/pages\/tropheedudoubs\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^le\-club\/le\-comite\/$ "https\:\/\/www\.vcfm\.ch\/pages\/club\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^le\-club\/equipement\-vcfm\/$ "https\:\/\/www\.vcfm\.ch\/pages\/club\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^le\-club\/$ "https\:\/\/www\.vcfm\.ch\/pages\/club\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^lecole\-de\-cyclisme\/$ "https\:\/\/vcfm\.ch\/pages\/ecole\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vcfm\.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vcfm\.ch$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^le\-club\/inscriptions\-aides\-vcfm\/$ "https\:\/\/www\.vcfm\.ch\/pages\/benevol\.php" [R=301,L]
+

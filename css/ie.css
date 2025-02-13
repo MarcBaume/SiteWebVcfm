@@ -1,0 +1,52 @@
+/* CSS-Datei main.css */
+
+/* necessary special settings for me-ie */
+.footergrd {
+	display: -ms-grid;
+	-ms-grid-columns:2fr 2fr 1fr 2fr;
+}
+
+.grd {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+}
+
+.haedergrd {
+    display: -ms-grid;
+    -ms-grid-columns: 3fr 2fr;
+}
+
+.pagegrd {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+}
+
+
+
+#fgrdms1 {
+	-ms-grid-column: 1;
+}
+
+#fgrdms2 {
+	-ms-grid-column: 2;
+}
+
+#fgrdms3 {
+	-ms-grid-column: 3;
+}
+
+#fgrdms4 {
+	-ms-grid-column: 4;
+}
+
+.grdms1 {
+	-ms-grid-column: 1;
+}
+
+.grdms2 {
+	-ms-grid-column: 2;
+}
+
+.grdms3 {
+	-ms-grid-column: 3;
+}

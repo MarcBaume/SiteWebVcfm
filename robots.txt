@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /pages/impressum.html
+Disallow: /pages/protection.html
+Disallow: /img/
+Disallow: /photos/
+Disallow: /tmbs/
+Disallow: /js/
+Disallow: /css/
+Disallow: /error404.html
+Disallow: /error403.html
+Sitemap: https://www.vcfm.ch/sitemap.xml
