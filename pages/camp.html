@@ -63,7 +63,7 @@
            <h2> <a href="https://www.salvapiano.com/de/bike-resort-toskana-meer/?_gl=1*1q1ttic*_up*MQ..*_gs*MQ..*_ga*MTQyMDY3MzQ2MC4xNzY4MTM5Mzkx*_ga_7CTF4P6N76*czE3NjgxMzkzOTEkbzEkZzEkdDE3NjgxMzk1MzIkajYwJGwwJGg1ODI0ODQxNzM.&gclid=Cj0KCQiAsY3LBhCwARIsAF6O6Xhq5MdjxbzWuG_kluIr3yAA60B7oyRWEUydEMMKyFRbyU4VGZEQvIYaAmu2EALw_wcB&gbraid=0AAAAADrN6g9tZfNul3r6_WrGJY5yPQ6Lp">Liens hotel</a></h2>
             <h2><a href="../pdf/velo_Toscane_camp2026.pdf">Brochure VCFM</a></h2>
                 <h2>Formulaire d'inscription au camp d'entrainement</h2>
-    <form action="CibleCamps.php"  method="post">
+    <form  id="formInscritption" action="CibleCamps.php"  method="post">
 <input type="hidden" name="spam_check" id="spam_check"></br>
         <label for="nom">Nom: (obligatoire)</label><input type="text" name="nom" id="nom" maxlength="15"></br>
         <label for="prenom">Prénom: (obligatoire)</label><input type="text" name="prenom" id="prenom" maxlength="15" ></br>
@@ -75,7 +75,7 @@
         <label for="mob">Mobile:</label><input type="text" name="mob" id="mob" maxlength="30" ></br>
         <p>Remarques:</p>
         <textarea name="rem" id="rem" rows="10"></textarea>;
-        <button type="submit">Envoyer</button>
+        <button onclick="myFunction1()" type="button">Envoyer</button>
     </form>
     </main>
 
@@ -96,6 +96,10 @@
     </footer>
     
 <script>
+    function myFunction1(){
+       form = document.getElementById("formInscritption");
+       form.submit();
+    }
     // toggle menu
     function myFunction() {
         var x = document.getElementById("myTopnav");
